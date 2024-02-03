@@ -1,0 +1,59 @@
+.item{
+    width: 280px;
+
+}
+.item p{
+    margin: 6px 0px;
+}
+.item-price{
+    display: flex;
+    gap: 20px;
+}
+.item-prices-new{
+    color: #374151;
+    font-size: 18px;
+    font-weight: 600;
+}
+.item-price-old{
+    color: #8c8c8c;
+    text-decoration: line-through;
+    font-size: 18px;
+    font-weight: 500;
+}
+.item :hover{
+    transform:scale(1.05);
+    transition: 0.6sec;
+}
+
+
+
+
+/* Item means All product details and list */
+
+
+/* Responsive Mobile Devices */
+@media only screen and (max-width: 767px) {
+    .item {
+        width: 85%;
+        height: auto;
+        margin-left: 25px;
+    }
+
+    .item-price {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .item-prices-new {
+        font-size: 16px;
+    }
+
+    .item-price-old {
+        font-size: 16px;
+    }
+    
+    .item:hover {
+        transform: scale(1.0); /* Adjust the hover effect for mobile devices */
+        transition: 0.3s; /* Adjust the transition duration for mobile devices */
+    }
+}

@@ -1,0 +1,114 @@
+.cartitems{
+    margin: 100px 170px;
+}
+.cartitems hr{
+    height: 3px;
+    background: #e2e2ee;
+    border: 0;
+}
+.cartitems-format-main{
+    display: grid;
+    grid-template-columns: 0.5fr 2fr 1fr 1fr 1fr 1fr;
+    align-items: center;
+    gap: 76px;
+    padding: 20px 0px ;
+    color: #454545;
+    font-size: 18px;
+    font-weight: 600;
+}
+.cartitems-format{
+    font-size: 17px;
+    font-weight: 500;
+}
+.articon-product-icon{
+    height: 63px;
+}
+.cartitem-remove-icon{
+    width: 15px;
+    margin: 0px 40px;
+    cursor: pointer;
+}
+.cartitem-down{
+    display: flex;
+    margin: 100px 0px;
+}
+.cartitem-total{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    margin-right: 200px;
+    gap: 40px;
+}
+.cartitem-total-item{
+    display: flex;
+    justify-content: space-around;
+    padding: 15px 0px;
+}
+.cartitem-total button{
+    width: 180px;
+    height: 58px;
+    outline: none;
+    border: none;
+    background :#E30B5C;
+    color: white;
+    font-weight: 600;
+    font-size: 15px;
+    cursor:pointer ;
+    border-radius: 20px;
+
+}
+
+
+
+
+
+
+@media only screen and (max-width: 768px) {
+    .cartitems {
+        margin: 50px 10px; /* Adjust margins for smaller screens */
+    }
+  
+
+    /* .cartitems-format-main {
+        display: flex;
+        gap:  20px;
+        grid-template-columns: 1fr; /* Single column layout for smaller screens */
+         /* Reduce the gap between columns */
+        /* padding: 10px 0px; /* Adjust padding */
+    /* } */ 
+    .text{
+        display: none;
+    }
+   .cartitems-format-main{
+    display: none;
+   }
+
+    /* Adjust styles for mobile */
+    .cartitem-remove-icon {
+        margin: 1px; /* Remove margin for mobile screens */
+    }
+
+    .cartitem-down {
+        margin: 50px 0; /* Adjust margin for mobile screens */
+    }
+
+    .cartitem-total {
+        margin: 0; /* Remove margin for mobile screens */
+    }
+    .carticon-product-icon {
+       width: 50px;
+       height: 50px; /* Make the image responsive by setting max-width to 100% */
+        border-radius: 25%; /* Allow the height to adjust proportionally */
+        
+    }
+    .cartitem-format{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        gap: 10px;
+       font-size: 15px;
+    }
+
+
+    
+}

@@ -1,0 +1,105 @@
+.loginsignup{
+    width: 100%;
+    height: 100vh;
+    background: #fce3fe;
+    padding-top: 90px;
+
+}
+.loginsignup-container{
+    width: 450px;
+    height: 540px;
+    background: white;
+    margin: auto;
+    padding: 40px 60px;
+}
+.loginsignup-container h1{
+    margin: 10px 0px;
+}
+
+.loginsignup-fields{
+    display: flex;
+    flex-direction: column;
+    gap: 29px;
+    margin-top: 30px;
+}
+.loginsignup-fields input{
+    height: 52px;
+    width: 100%;
+    padding-left: 20px;
+    border: 1px solid #c9c9c9;
+    outline: none;
+    color: #5c5c5c;
+    font-size: 18px;
+
+}
+.loginsignup-container button{
+    width: 100%;
+    height: 52px;
+    color: white;
+    background-color: #ff4141;
+    margin-top: 30px;
+    border: none;
+    font-size: 24px;
+    font-weight: 500;
+    cursor: pointer;
+
+}
+.loginsignup-login{
+    margin-top: 20px;
+    color: #5c5c5c;
+    font-size: 18px;
+    font-weight: 500;
+}
+.loginsignup-login span{
+    color: #ff4141;
+    font-weight: 600;
+}
+.loginsignup-agree{
+    font-family: 500;
+    display: flex;
+    align-items: center;
+    margin-top: 25px;
+    gap: 20px;
+    color: #5c5c5c;
+    font-size: 18px;
+}
+
+
+
+
+
+
+
+/* Responsive Mobile Devices */
+@media only screen and (max-width: 767px) {
+    .loginsignup {
+      padding-top: 60px; /* Adjust padding for smaller screens */
+    }
+  
+    .loginsignup-container {
+      width: 90%;
+      max-width: 400px; /* Adjust the maximum width for smaller screens */
+      padding: 30px;
+      margin: auto;
+    }
+  
+    .loginsignup-container h1 {
+      font-size: 24px; /* Adjust font size for smaller screens */
+    }
+  
+    .loginsignup-fields input {
+      height: 48px; /* Adjust input height for smaller screens */
+      font-size: 16px; /* Adjust font size for smaller screens */
+    }
+  
+    .loginsignup-container button {
+      height: 48px; /* Adjust button height for smaller screens */
+      font-size: 20px; /* Adjust font size for smaller screens */
+    }
+  
+    .loginsignup-login,
+    .loginsignup-agree {
+      font-size: 16px; /* Adjust font size for smaller screens */
+    }
+  }
+  

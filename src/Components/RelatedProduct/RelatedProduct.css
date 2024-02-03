@@ -1,0 +1,57 @@
+.relatedproduct{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    height: 90vh;
+    margin-top: 90px;
+    border-radius: 14px;
+}
+.relatedproduct h1{
+    color: #171717;
+    font-size: 50px;
+    font-weight: 600;
+}
+.relatedproduct hr{
+    width: 200px;
+    height: 5px;
+    border-radius:10px ;
+    background: #252525;
+
+}
+.relatedproduct-item{
+    margin-top: 50px;
+    display: flex;
+    gap: 30px;
+}
+
+
+
+
+
+/* Responsive Mobile Devices */
+@media only screen and (max-width: 767px) {
+    .relatedproduct {
+      /* margin-left: 23px; */
+      height: auto; /* Remove fixed height for smaller screens */
+      margin-top: 30px; /* Adjust margin for smaller screens */
+      padding: 25px; /* Add padding for better spacing on smaller screens */
+    }
+  
+    .relatedproduct h1 {
+      font-size: 36px; /* Adjust font size for smaller screens */
+    }
+  
+    .relatedproduct hr {
+      width: 100px; /* Adjust width for smaller screens */
+    }
+  
+    .relatedproduct-item {
+      flex-direction: column; /* Stack items vertically on smaller screens */
+      gap: 25px; /* Adjust gap for smaller screens */
+      margin-top: 20px; /* Adjust margin for smaller screens */
+      margin-left: 25px;
+      margin-right: 15px;
+    }
+  }
+  
