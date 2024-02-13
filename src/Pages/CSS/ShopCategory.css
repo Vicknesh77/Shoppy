@@ -61,9 +61,11 @@
   
     .shopcategory-products {
       margin: 20px 10px; /* Adjust the margin for smaller screens */
-      grid-template-columns: 1fr; /* Switch to a single column layout for smaller screens */
+      grid-template-columns: 1fr 1fr; /* Switch to a single column layout for smaller screens */
       row-gap: 27px; /* Adjust row gap for smaller screens */
-      margin-left: 28px;
+      /* margin-left: 28px; */
+      margin-left: 8px;
+      margin-right: 30px;
     }
   
     .shopcategory-loadmore {

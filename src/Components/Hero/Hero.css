@@ -74,12 +74,12 @@
         flex-direction: column;
         margin-bottom: 50px;
     }
-    .hero-latest-btn{
+    /* .hero-latest-btn{
         height: 70px;
-        width: 1000px;
+        width: 50px;
         margin-top: 15px;
-        padding: 8px;
-    }
+        
+    } */
 
     .hero-left {
         padding: 20px;
@@ -104,8 +104,9 @@
     }
 
     .hero-latest-btn {
-        width: 80%;
-        margin: 20px auto;
+        width: 40%;
+        margin: 15px auto;
+        padding-left: 5px;
     }
 
     .hero-right {

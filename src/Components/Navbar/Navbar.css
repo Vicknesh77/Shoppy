@@ -274,6 +274,7 @@
     .navbar {
       flex-direction: column;
       padding: 15px;
+      position: sticky;
     }
   
     .nav-menu {
