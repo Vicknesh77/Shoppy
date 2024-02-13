@@ -1,5 +1,5 @@
 .popular{
-    margin-top: 50px;
+    margin-top: 80px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -32,7 +32,7 @@
 /* Responsive Mobile Devices */
 @media only screen and (max-width: 767px) {
     .popular {
-        margin-top: 70px;
+        margin-top: 180px;
         margin-bottom: 60px;
         margin-left: 30px;
         gap: 9px;

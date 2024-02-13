@@ -1,11 +1,12 @@
 import React from 'react'
 import './NewsLetter.css'
-
+ //newletter okay
 const NewsLetter = () => {
   return (
     <div className='newsletter'>
         <h1 className='heading'>Get Exclusive offer on  Your Mail</h1>
         <p>Subscribe to our newsletter and stay updated</p>
+
         <div>
             <input
             type='email'

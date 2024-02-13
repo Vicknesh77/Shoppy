@@ -5,6 +5,9 @@ import instagram_icon from '../Assests/instagram_icon.png'
 import pintester_icon from '../Assests/pintester_icon.png'
 import whatsapp_icon from '../Assests/whatsapp_icon.png'
 
+
+// Footer mounted in the App component bcz footer is show all page of section
+
 const Footer = () => {
   return (
     <div className='footer'>
@@ -19,7 +22,9 @@ const Footer = () => {
             <li>About</li>
             <li>Contact</li>
         </ul>
-        <div className="footer-social-icon">
+    {/* container for icon */}
+        <div className="footer-social-icon">  
+
             <div className="footer-icon-container">
                 <img src={instagram_icon} alt="" />
             </div>
@@ -30,6 +35,7 @@ const Footer = () => {
                 <img src={whatsapp_icon} alt="" />
             </div>
         </div>
+
         <div className="footer-copyright">
             <hr/>
             <p>Copyright @ 2024 Made by Kiki</p>

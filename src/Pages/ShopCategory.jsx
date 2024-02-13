@@ -4,9 +4,12 @@ import { ShopContext } from '../Context/ShopContext'
 // import dropdown_icon from '../Components/Assests/dropdown_icon.png'
 import Item from '../Components/Item/Item'
 
-const ShopCategory = ({banner,category}) => {    //From App.js props
+const ShopCategory = ({banner,category}) => {      //From App.js props destructring
+    
   const {all_product} = useContext(ShopContext)
+
   return (
+
     <div className='shop-category'>
         <img  className='shopcategory-banner' src={banner} alt=''/> 
         <div className=" shopcategory-indexsort">
@@ -19,6 +22,7 @@ const ShopCategory = ({banner,category}) => {    //From App.js props
             
             </div> 
         </div>
+
         <div className="shopcategory-products">
             {/* map through all the product and display them */}
             {all_product.map((item,i)=>{
@@ -34,8 +38,9 @@ const ShopCategory = ({banner,category}) => {    //From App.js props
               }
             })}
         </div>
+
         <div className='shopcategory-loadmore'>
-            Explore More
+            <button  onClick={window.scrollTo(0,0)}>Explore More</button>
         </div>
         {/* <div className="flex justify-center border-r-8 border-blue my-20">
         <button type="button" class="text-gray-900 bg-[#F7BE38] hover:bg-[#F7BE38]/90 focus:ring-4 focus:outline-none focus:ring-[#F7BE38]/50 font-medium rounded-lg text-sm px-5 py-2.5 text-center inline-flex items-center dark:focus:ring-[#F7BE38]/50 me-2 mb-2">Explore More</button>

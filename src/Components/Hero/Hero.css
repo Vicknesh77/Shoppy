@@ -2,6 +2,7 @@
     height: 100vh;
     background: linear-gradient(180deg, #fde1ff ,#e1ffea22 60%);
     display: flex;
+    
 }
 .hero-left{
     flex: 1;
@@ -71,6 +72,7 @@
 @media only screen and (max-width: 767px) {
     .hero {
         flex-direction: column;
+        margin-bottom: 50px;
     }
     .hero-latest-btn{
         height: 70px;

@@ -2,22 +2,29 @@ import React from 'react'
 import './Item.css'
 import { Link } from 'react-router-dom'
 
-const Item = (props) => {
+// Item Component is Supply the product details to other components
+// the item component only have the product details like  name and prices
+
+const Item = ({id, image , name, new_price, old_price }) => {             // The props value are coming from the popular and Newcollection component
+
   return (
+
     <div className='item'>
-      <Link to={`/product/${props.id}`}>
-    <img className='w-180 h-100' onClick={window.scrollTo(0,0)}src={props.image} alt='/'/>
-    <p>{props.name}</p>
-    </Link>
-    
-    <div className="item-prices">
-        <div className='item-price-new'>
-            {props.new_price}
+          <Link to={`/product/${id}`}>
+              <img className='w-90 h-90 rounded-lg' onClick={window.scrollTo(0,0)}src={image} alt='/'/>
+              <p>{name}</p>
+          </Link>
+        
+        <div className="item-prices">
+            <div className='item-price-new'>
+                {new_price}
+            </div>
+
+            <div className='item-price-old'>
+                {old_price}
+            </div>
+            
         </div>
-        <div className='item-price-old'>
-            {props.old_price}
-        </div>
-    </div>
     </div>
   )
 }

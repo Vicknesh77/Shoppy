@@ -5,6 +5,7 @@ import exclusive_image from '../Assests/exclusive_image.png'
 const Offer = () => {
   return (
     <div className='offer '>
+      
         <div className="offer-left">
             <h1>Exclusive</h1>    
             <h1>Offers For You</h1>
